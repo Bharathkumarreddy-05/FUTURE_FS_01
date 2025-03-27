@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #e0f2fe; /* Light blue */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #1e3a8a; /* Dark blue */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e3a8a;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-size: 2.5em;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 300px;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.filter button {
+    margin: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #e0f2fe;
+    border: 1px solid #1e3a8a;
+    border-radius: 5px;
+    color: #1e3a8a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter button:hover, .filter button.active {
+    background-color: #1e3a8a;
+    color: blue;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+#contact-form label {
+    margin-top: 15px;
+    color: #4a5568;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+    .project{
+        width: 90%;
+    }
+}
